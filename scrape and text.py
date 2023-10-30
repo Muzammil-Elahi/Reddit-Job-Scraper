@@ -2,18 +2,18 @@ import praw
 from twilio.rest import Client
 
 # Reddit API credentials
-client_id = '5_diC1-s9DWIMptgXAwAag'
-client_secret = 'mkSjEDeLawSN9EOGTukVEMhUwikaeg'
-user_agent = 'YOUR_USER_AGENT'
+client_id = 'insert here'
+client_secret = 'insert here'
+user_agent = ("Reddit Job Scraper by /u/work-life-nomad" "https://github.com/Muzammil-Elahi/Reddit-Job-Scraper/")
 
 # Automate this and send text daily at midnight
 from apscheduler.schedulers.background import BackgroundScheduler
 
 # Twilio credentials
-twilio_account_sid = 'AC12b398455e5a37c22cc3328776bb4cdd'
-twilio_auth_token = 'e3b77876faf59c3cdefdd6b387d57e81'
-twilio_phone_number = '+12564742988'
-my_number = '+6475508213'
+twilio_account_sid = 'insert here'
+twilio_auth_token = 'insert here'
+twilio_phone_number = 'insert here'
+my_number = 'insert here'
 
 # Initialize the Reddit API client
 reddit = praw.Reddit(client_id=client_id, client_secret=client_secret, user_agent=user_agent)
